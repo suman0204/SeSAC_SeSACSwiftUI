@@ -16,6 +16,8 @@
 		8B51FFC92B01AB08009F1E50 /* SeSACSwiftUIUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B51FFC82B01AB08009F1E50 /* SeSACSwiftUIUITestsLaunchTests.swift */; };
 		8B51FFD62B01B967009F1E50 /* MenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B51FFD52B01B967009F1E50 /* MenuView.swift */; };
 		8B51FFD82B01C895009F1E50 /* RenderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B51FFD72B01C895009F1E50 /* RenderView.swift */; };
+		8B7F57F62B03071C00856C25 /* TamagochiView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B7F57F52B03071C00856C25 /* TamagochiView.swift */; };
+		8B7F57F82B03379400856C25 /* MovieView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B7F57F72B03379400856C25 /* MovieView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +50,8 @@
 		8B51FFC82B01AB08009F1E50 /* SeSACSwiftUIUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeSACSwiftUIUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		8B51FFD52B01B967009F1E50 /* MenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuView.swift; sourceTree = "<group>"; };
 		8B51FFD72B01C895009F1E50 /* RenderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RenderView.swift; sourceTree = "<group>"; };
+		8B7F57F52B03071C00856C25 /* TamagochiView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TamagochiView.swift; sourceTree = "<group>"; };
+		8B7F57F72B03379400856C25 /* MovieView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +108,8 @@
 				8B51FFB12B01AB07009F1E50 /* Preview Content */,
 				8B51FFD52B01B967009F1E50 /* MenuView.swift */,
 				8B51FFD72B01C895009F1E50 /* RenderView.swift */,
+				8B7F57F52B03071C00856C25 /* TamagochiView.swift */,
+				8B7F57F72B03379400856C25 /* MovieView.swift */,
 			);
 			path = SeSACSwiftUI;
 			sourceTree = "<group>";
@@ -264,6 +270,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				8B51FFAE2B01AB06009F1E50 /* ContentView.swift in Sources */,
+				8B7F57F82B03379400856C25 /* MovieView.swift in Sources */,
+				8B7F57F62B03071C00856C25 /* TamagochiView.swift in Sources */,
 				8B51FFD62B01B967009F1E50 /* MenuView.swift in Sources */,
 				8B51FFD82B01C895009F1E50 /* RenderView.swift in Sources */,
 				8B51FFAC2B01AB06009F1E50 /* SeSACSwiftUIApp.swift in Sources */,
