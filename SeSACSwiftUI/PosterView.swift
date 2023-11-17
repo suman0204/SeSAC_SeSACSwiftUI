@@ -14,6 +14,7 @@ struct PosterView: View {
     var body: some View {
         ScrollView(showsIndicators: true) {
             LazyVStack {
+//                print("")
                 ForEach(0..<50) { item in
                     AsyncImageView()
                         .frame(width: 100, height: 100)

@@ -8,12 +8,18 @@
 import SwiftUI
 /*
  버튼을 클릭해서 화면 Dismiss/Pop
- 
+ 화면 전환 시 
 */
 struct TransitionView: View {
     
     @State private var isFull = false
     @State private var isSheet = false
+    
+    init(isFull: Bool = false, isSheet: Bool = false) {
+        self.isFull = isFull
+        self.isSheet = isSheet
+        print("TransitionView Init")
+    }
     
     var body: some View {
         NavigationView{
@@ -25,7 +31,11 @@ struct TransitionView: View {
                     isSheet = true
                 }
                 NavigationLink("Push") {
-                    RenderView()
+//                    RenderView()
+                    NavigationLazyView(RenderView())
+                }
+                NavigationLink("Push") {
+                    NavigationLazyView(PosterView())
                 }
             }
             .sheet(isPresented: $isSheet, content: {
