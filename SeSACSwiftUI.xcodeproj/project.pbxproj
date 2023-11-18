@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		8B3A4AE02B05A8310001487C /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B3A4ADF2B05A8310001487C /* SearchView.swift */; };
 		8B3A4AE42B06EF500001487C /* NavigationLazyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B3A4AE32B06EF500001487C /* NavigationLazyView.swift */; };
+		8B3A4AE62B06F3A00001487C /* ChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B3A4AE52B06F3A00001487C /* ChartView.swift */; };
+		8B3A4AEA2B0704F20001487C /* GridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B3A4AE92B0704F20001487C /* GridView.swift */; };
 		8B51FFAC2B01AB06009F1E50 /* SeSACSwiftUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B51FFAB2B01AB06009F1E50 /* SeSACSwiftUIApp.swift */; };
 		8B51FFAE2B01AB06009F1E50 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B51FFAD2B01AB06009F1E50 /* ContentView.swift */; };
 		8B51FFB02B01AB07009F1E50 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8B51FFAF2B01AB07009F1E50 /* Assets.xcassets */; };
@@ -48,6 +50,8 @@
 /* Begin PBXFileReference section */
 		8B3A4ADF2B05A8310001487C /* SearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchView.swift; sourceTree = "<group>"; };
 		8B3A4AE32B06EF500001487C /* NavigationLazyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationLazyView.swift; sourceTree = "<group>"; };
+		8B3A4AE52B06F3A00001487C /* ChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartView.swift; sourceTree = "<group>"; };
+		8B3A4AE92B0704F20001487C /* GridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridView.swift; sourceTree = "<group>"; };
 		8B51FFA82B01AB06009F1E50 /* SeSACSwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SeSACSwiftUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8B51FFAB2B01AB06009F1E50 /* SeSACSwiftUIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeSACSwiftUIApp.swift; sourceTree = "<group>"; };
 		8B51FFAD2B01AB06009F1E50 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -133,7 +137,9 @@
 				8B7F58012B046F5500856C25 /* HomeView.swift */,
 				8B7F58032B0471C300856C25 /* StartView.swift */,
 				8B3A4ADF2B05A8310001487C /* SearchView.swift */,
+				8B3A4AE52B06F3A00001487C /* ChartView.swift */,
 				8B3A4AE32B06EF500001487C /* NavigationLazyView.swift */,
+				8B3A4AE92B0704F20001487C /* GridView.swift */,
 			);
 			path = SeSACSwiftUI;
 			sourceTree = "<group>";
@@ -301,7 +307,9 @@
 				8B51FFD62B01B967009F1E50 /* MenuView.swift in Sources */,
 				8B7F58022B046F5500856C25 /* HomeView.swift in Sources */,
 				8B7F58002B045BBE00856C25 /* PosterView.swift in Sources */,
+				8B3A4AE62B06F3A00001487C /* ChartView.swift in Sources */,
 				8B3A4AE02B05A8310001487C /* SearchView.swift in Sources */,
+				8B3A4AEA2B0704F20001487C /* GridView.swift in Sources */,
 				8B7F57FC2B044C3800856C25 /* TransitionView.swift in Sources */,
 				8B3A4AE42B06EF500001487C /* NavigationLazyView.swift in Sources */,
 				8B51FFD82B01C895009F1E50 /* RenderView.swift in Sources */,

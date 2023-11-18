@@ -45,21 +45,19 @@ struct Movie: Hashable, Identifiable {
     let id = UUID()
     let name: String
     let color = Color.random()
+    let count = Int.random(in: 1...100)
 }
 
 struct SearchView: View {
     
-    @State private var searchQuery = "ㅁ마"
+    @State private var searchQuery = ""
+    @State private var showChart = false
     
     let movie = [
-        Movie(name: "어벤져스"),
-        Movie(name: "어벤져스2"),
-        Movie(name: "액스맨"),
-        Movie(name: "어벤져스3"),
-        Movie(name: "해리포터2"),
-        Movie(name: "해리포터3"),
-        Movie(name: "A"),
-        Movie(name: "AB")
+        Movie(name: "어벤져스"),Movie(name: "어벤져스2"),
+        Movie(name: "액스맨"),Movie(name: "어벤져스3"),
+        Movie(name: "해리포터2"),Movie(name: "해리포터3"),
+        Movie(name: "A"),Movie(name: "AB")
     ]
     
     var filterMovie: [Movie] {
@@ -93,15 +91,38 @@ struct SearchView: View {
                 }
 
             }
+            .navigationBarTitleDisplayMode(.inline)
+            .toolbar{
+                ToolbarItemGroup(placement: .topBarLeading) {
+                    Button {
+                        print("클릭되었습니다")
+                        showChart = true
+                    } label: {
+                        Image(systemName: "star.fill")
+                    }
+                }
+                
+                ToolbarItemGroup(placement: .topBarTrailing) {
+                    Button {
+                        print("클릭되었습니다")
+                    } label: {
+                        Image(systemName: "person.fill")
+                    }
+                }
+                
+            }
             .navigationTitle("검색")
             .navigationDestination(for: Movie.self) { item in
                 SearchDetailView(movie: item)
             }
-        }
-        .searchable(text: $searchQuery, placement: .navigationBarDrawer, prompt: "검색어를 입력")
-        .onSubmit(of: .search) {
-            print("ffdhdfhd")
-            
+            .searchable(text: $searchQuery, placement: .navigationBarDrawer, prompt: "검색어를 입력")
+            .onSubmit(of: .search) {
+                print("ffdhdfhd")
+                
+            }
+            .sheet(isPresented: $showChart, content: {
+                ChartView(movie: movie)
+            })
         }
     }
 }
